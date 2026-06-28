@@ -72,8 +72,14 @@ h1, h2, h3, h4 {
   color: var(--forest);
   margin: 0 0 .5em;
   font-optical-sizing: auto;
+  text-wrap: balance; /* even line lengths, no orphan words in headings */
 }
-p { margin: 0 0 1.1rem; color: var(--ink-soft); }
+p { margin: 0 0 1.1rem; color: var(--ink-soft); text-wrap: pretty; /* avoid lone last word */ }
+
+/* Short intro/lead blocks read best balanced across lines */
+.lead, .hero .lead, .band p, .taster p, .section-head p, .card p, .cta-band .lead {
+  text-wrap: balance;
+}
 
 .wrap { width: min(100% - 2.6rem, var(--maxw)); margin-inline: auto; }
 
