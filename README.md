@@ -34,6 +34,6 @@ git push -u origin main
 ```
 
 ## Contact details (edit in each HTML file's header/footer + contact.html)
-- Email: learning@mendipmaths.com
+- Email: ryan@mendipmaths.com
 - Phone: 07889 733 873
 - Based: Shepton Mallet, Somerset
