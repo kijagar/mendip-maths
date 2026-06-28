@@ -15,7 +15,7 @@ A fast, static multi-page website for Mendip Maths Tutoring, designed to be host
 ## Design
 - **Type:** Fraunces (display serif) + Inter (body) via Google Fonts
 - **Palette:** deep forest green `#1e3a29` + warm stone neutrals on white, with a clay accent
-- **Imagery:** Glastonbury Tor (`assets/tor.jpg`) and Cheddar Gorge (`assets/gorge.jpg`)
+- **Imagery:** a local railway viaduct (`assets/tor.jpg`) and Cheddar Gorge (`assets/gorge.jpg`)
 - Subtle scroll-reveal + spring motion, fully responsive, respects `prefers-reduced-motion`
 
 ## Add Ryan's photo
