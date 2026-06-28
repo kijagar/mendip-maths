@@ -33,6 +33,18 @@ git branch -M main
 git push -u origin main
 ```
 
+## Adding a blog post
+`blog.html` currently shows a "coming soon" state. To publish a real post:
+1. Copy an existing page (e.g. `fees.html`) to `posts/your-post-title.html` and write the article inside the `<section>`.
+2. On `blog.html`, replace one of the "Coming soon" ghost cards with a real link, e.g.
+   ```html
+   <a class="card reveal" href="posts/your-post-title.html">
+     <h3>Your post title</h3>
+     <p>A one-line summary of the article.</p>
+   </a>
+   ```
+3. Once a few posts exist, remove the `.blog-empty` "coming soon" panel.
+
 ## Contact details (edit in each HTML file's header/footer + contact.html)
 - Email: ryan@mendipmaths.com
 - Phone: 07889 733 873
