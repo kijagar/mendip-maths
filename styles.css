@@ -1,7 +1,7 @@
 /* ===========================================================
    Mendip Maths Tutoring
    Design: clean modern-editorial, steered by Lionheart Education
-   "Old-school values, new-school thinking" — serif display + clean sans
+   "Old-school values, new-school thinking": serif display + clean sans
    Palette: deep forest green + warm stone neutrals on white
    Type: Fraunces (display serif) · Inter (UI/body)
    =========================================================== */
@@ -26,7 +26,7 @@
   --ink-soft:  #545d52;
   --ink-faint: #828a7e;
 
-  /* Warm accent (used sparingly — clay/ochre) */
+  /* Warm accent (used sparingly: clay/ochre) */
   --clay:      #bf6f4e;
   --clay-soft: #f0e0d4;
 
@@ -163,7 +163,7 @@ p { margin: 0 0 1.1rem; color: var(--ink-soft); }
 .btn-sm { padding: .55rem 1.05rem; font-size: .9rem; }
 
 /* ===========================================================
-   Hero — full-bleed photographic (Glastonbury Tor)
+   Hero: full-bleed photographic (Glastonbury Tor)
    =========================================================== */
 .hero {
   position: relative;
@@ -259,6 +259,26 @@ p { margin: 0 0 1.1rem; color: var(--ink-soft); }
 }
 .split.narrow-left { grid-template-columns: .85fr 1.15fr; }
 
+/* framed photo with caption (home intro) */
+.media-frame {
+  position: relative; margin: 0;
+  border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow-md);
+  aspect-ratio: 1/1;
+  background: linear-gradient(160deg, var(--green), var(--forest));
+}
+.media-frame img { width: 100%; height: 100%; object-fit: cover; }
+.media-frame figcaption {
+  position: absolute; left: 16px; bottom: 16px;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(6px);
+  padding: .6rem .95rem; border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  display: flex; flex-direction: column; line-height: 1.15;
+}
+.media-frame figcaption b { font-family: var(--serif); font-size: 1.05rem; color: var(--forest); }
+.media-frame figcaption span { font-size: .78rem; color: var(--ink-soft); }
+
 /* ===========================================================
    Cards
    =========================================================== */
@@ -288,7 +308,7 @@ p { margin: 0 0 1.1rem; color: var(--ink-soft); }
 }
 
 /* ===========================================================
-   About — portrait + bio
+   About: portrait + bio
    =========================================================== */
 .about-grid {
   display: grid; grid-template-columns: minmax(260px, 400px) 1fr;

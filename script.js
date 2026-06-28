@@ -1,4 +1,4 @@
-/* Mendip Maths Tutoring — lightweight interactions
+/* Mendip Maths Tutoring: lightweight interactions
    - Mobile nav toggle
    - Scroll-reveal (IntersectionObserver)
    - Auto current year                                          */

@@ -1,12 +1,12 @@
-# Mendip Maths Tutoring — website
+# Mendip Maths Tutoring website
 
-A fast, static multi-page website for Mendip Maths Tutoring, designed to be hosted on **GitHub Pages**. No build step, no dependencies — just HTML, CSS and a little vanilla JavaScript.
+A fast, static multi-page website for Mendip Maths Tutoring, designed to be hosted on **GitHub Pages**. No build step, no dependencies: just HTML, CSS and a little vanilla JavaScript.
 
 ## Pages
 | File | Page |
 |------|------|
 | `index.html` | Home (full-bleed Glastonbury Tor hero) |
-| `about.html` | About — Ryan's story |
+| `about.html` | About: Ryan's story |
 | `offer.html` | What we offer |
 | `fees.html` | Fees & cancellation policy |
 | `catchment.html` | Catchment area |
