@@ -27,8 +27,9 @@ export default function Footer() {
           <div>
             <h4>Get in touch</h4>
             <ul>
-              <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
               <li><a href={SITE.phoneHref}>{SITE.phoneDisplay}</a></li>
+              <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
+              <li><Link to="/contact">Contact page</Link></li>
               <li>{SITE.location}</li>
             </ul>
           </div>

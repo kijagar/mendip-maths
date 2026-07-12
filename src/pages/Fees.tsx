@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
-import { ArrowRight, School, BookOpen, Clock, Calendar, Pin } from "../components/icons";
+import { ArrowRight, School, BookOpen, Clock, Calendar, Pin, Globe } from "../components/icons";
 
 const FEES_JSON_LD = {
   "@context": "https://schema.org",
@@ -64,6 +64,13 @@ export default function Fees() {
                 <b>Travel.</b> Enquiries from outside my catchment or from very remote locations
                 will be considered, but travel costs will affect lesson fees.{" "}
                 <Link to="/catchment" className="inline-link">See catchment →</Link>
+              </p>
+            </Reveal>
+            <Reveal className="note" delay={3}>
+              <div className="ic"><Globe /></div>
+              <p>
+                <b>Online lessons.</b> Lessons are also available online, worldwide. Get in touch
+                to arrange a time that suits your time zone.
               </p>
             </Reveal>
           </div>

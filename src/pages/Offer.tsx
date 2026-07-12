@@ -14,8 +14,8 @@ const OFFERS = [
   {
     num: "02",
     icon: House,
-    title: "Convenient in-home lessons",
-    body: "Skip the stressful after-school rush. I come directly to you, with focused one-hour sessions in the comfort and safety of your own home.",
+    title: "In-home & online lessons",
+    body: "Skip the stressful after-school rush. I come directly to you for focused one-hour sessions at home, or teach live online, wherever you are in the world.",
   },
   {
     num: "03",
@@ -36,7 +36,7 @@ export default function Offer() {
     <>
       <Seo
         title="What I Offer | Mendip Maths Tutoring"
-        description="Tailored learning plans, convenient in-home lessons, reinforced learning with feedback, and measurable progress: maths tuition designed around your child."
+        description="Tailored learning plans, in-home lessons across Somerset, online lessons worldwide, reinforced learning with feedback, and measurable progress: maths tuition designed around your child."
         path="/what-i-offer"
       />
 

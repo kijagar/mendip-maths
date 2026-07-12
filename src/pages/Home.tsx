@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
 import { asset } from "../site";
-import { ArrowRight, Plus, Clock, GradCap, Pin, Target, House, Notebook, TrendUp } from "../components/icons";
+import { ArrowRight, Plus, Clock, GradCap, Pin, Globe, Target, House, Notebook, TrendUp } from "../components/icons";
 
 const OFFER_CARDS = [
   {
@@ -12,8 +12,8 @@ const OFFER_CARDS = [
   },
   {
     icon: House,
-    title: "Convenient in-home lessons",
-    body: "Skip the after-school rush. Focused one-hour sessions delivered in the comfort and safety of your own home.",
+    title: "In-home & online lessons",
+    body: "Skip the after-school rush. Focused one-hour sessions at your home across Somerset, or live online worldwide.",
   },
   {
     icon: Notebook,
@@ -32,7 +32,7 @@ export default function Home() {
     <>
       <Seo
         title="Mendip Maths Tutoring | Confident Maths, Real Progress"
-        description="One-to-one maths tutoring across the Mendips and Somerset. GCSE & A-Level, tailored learning plans, in-home lessons, and specialist support for ADHD, autism and dyslexia. Free taster lesson."
+        description="One-to-one maths tutoring across the Mendips and Somerset, plus online lessons worldwide. GCSE & A-Level, tailored learning plans, and specialist support for ADHD, autism and dyslexia. Free taster lesson."
         path="/"
       />
 
@@ -70,6 +70,7 @@ export default function Home() {
           <span className="item"><Clock /> 15 years&rsquo; teaching experience</span>
           <span className="item"><GradCap /> GCSE &amp; A-Level, all exam boards</span>
           <span className="item"><Pin /> Based in Shepton Mallet</span>
+          <span className="item"><Globe /> Online lessons worldwide</span>
         </div>
       </div>
 
@@ -113,7 +114,7 @@ export default function Home() {
           <Reveal className="section-head">
             <p className="eyebrow">What I offer</p>
             <h2>Everything built around one student: yours.</h2>
-            <p className="lead">Focused, in-home lessons with structure, feedback and progress you can actually see.</p>
+            <p className="lead">Focused one-to-one lessons, at your home or online, with structure, feedback and progress you can actually see.</p>
           </Reveal>
           <div className="cards">
             {OFFER_CARDS.map((card, i) => (

@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
+import CatchmentMap from "../components/CatchmentMap";
 import { CATCHMENT_AREAS, asset } from "../site";
-import { ArrowRight, Pin } from "../components/icons";
+import { ArrowRight, Pin, Globe } from "../components/icons";
 
 export default function Catchment() {
   return (
     <>
       <Seo
         title="Catchment Area | Mendip Maths Tutoring"
-        description="Based out of Shepton Mallet, Mendip Maths Tutoring covers Wells, Frome, Glastonbury, Street, Midsomer Norton and the surrounding Mendip villages."
+        description="In-person maths tuition around Shepton Mallet: Wells, Frome, Glastonbury, Street, Midsomer Norton and the surrounding Mendip villages, plus online lessons worldwide."
         path="/catchment"
       />
 
@@ -26,16 +27,30 @@ export default function Catchment() {
         </div>
         <div className="wrap">
           <p className="eyebrow">Catchment</p>
-          <h1 className="band-title">Based in Shepton Mallet, serving the Mendips.</h1>
-          <p>I bring expert one-to-one maths tuition directly to homes across the heart of Somerset.</p>
+          <h1 className="band-title">Based in Shepton Mallet, teaching everywhere.</h1>
+          <p>
+            In-person lessons across the heart of Somerset, and online lessons
+            wherever you are in the world.
+          </p>
         </div>
       </section>
 
       <section className="section">
         <div className="wrap">
-          <Reveal className="catch-box">
-            <p className="eyebrow">Areas I cover</p>
-            <h2 className="catch-title">I&rsquo;m based out of Shepton Mallet and cover the following areas:</h2>
+          <Reveal className="section-head">
+            <p className="eyebrow">In-person lessons</p>
+            <h2>Areas I cover.</h2>
+            <p className="lead">
+              I&rsquo;m based out of Shepton Mallet and travel to homes across the
+              following areas:
+            </p>
+          </Reveal>
+
+          <Reveal>
+            <CatchmentMap />
+          </Reveal>
+
+          <Reveal className="catch-box stack-top-sm">
             <ul className="catch-chips">
               {CATCHMENT_AREAS.map((area) => (
                 <li className="chip" key={area}>{area}</li>
@@ -49,6 +64,19 @@ export default function Catchment() {
                 considered, but travel costs will affect lesson fees.
               </p>
             </div>
+          </Reveal>
+
+          <Reveal className="taster online-band">
+            <div className="ic-round"><Globe width={26} height={26} /></div>
+            <span className="tag">Online lessons</span>
+            <h2>Not local? I teach online, worldwide.</h2>
+            <p>
+              Live one-to-one online lessons with the same tailored plans, marked homework
+              and progress tracking, wherever you are in the world.
+            </p>
+            <Link to="/contact" className="btn btn-light">
+              Arrange an online lesson <ArrowRight />
+            </Link>
           </Reveal>
 
           <div className="hero-actions stack-top">

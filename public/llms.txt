@@ -1,8 +1,9 @@
 # Mendip Maths Tutoring
 
-> One-to-one maths tutoring across the Mendips and Somerset, UK. GCSE and A-Level
-> support with tailored learning plans, in-home lessons, and specialist experience
-> supporting students with ADHD, autism and dyslexia. Free taster lesson available.
+> One-to-one maths tutoring across the Mendips and Somerset, UK, plus live online
+> lessons worldwide. GCSE and A-Level support with tailored learning plans, in-home
+> lessons, and specialist experience supporting students with ADHD, autism and
+> dyslexia. Free taster lesson available.
 
 ## About
 
@@ -10,8 +11,9 @@
   and has 15 years' teaching experience in the UK and overseas across all major exam boards.
 - Since 2022, specialised in alternative provision, supporting students with
   diverse learning needs including ADHD, autism and dyslexia.
-- Format: one-to-one, one-hour lessons delivered in the student's own home, with
-  tailored learning plans, marked homework, feedback and regular low-stress assessments.
+- Format: one-to-one, one-hour lessons delivered in the student's own home (within
+  the Somerset catchment) or live online worldwide, with tailored learning plans,
+  marked homework, feedback and regular low-stress assessments.
 
 ## Fees
 
@@ -20,13 +22,14 @@
 - Free taster lesson with no commitment and no payment details needed
 - Term-time cancellations with under 48 hours' notice are charged in full;
   holiday sessions need two weeks' notice. Travel outside the catchment may affect fees.
+- Online lessons are available worldwide; contact for scheduling across time zones.
 
 ## Catchment
 
-Based in Shepton Mallet, Somerset. Areas covered: Pilton, Evercreech, Bruton, Wells,
-Castle Cary, Oakhill, Chilcompton, Stoke St. Michael, Leigh upon Mendip, Radstock,
+Based in Shepton Mallet, Somerset. In-person areas covered: Pilton, Evercreech, Bruton,
+Wells, Castle Cary, Oakhill, Chilcompton, Stoke St. Michael, Leigh upon Mendip, Radstock,
 Midsomer Norton, Frome, Glastonbury, Street. Enquiries from outside the catchment
-are considered (travel costs may apply).
+are considered (travel costs may apply). Online lessons are available worldwide.
 
 ## Contact
 
@@ -38,8 +41,8 @@ are considered (travel costs may apply).
 
 - [Home](https://www.mendipmaths.com/): Overview and free taster lesson
 - [About](https://www.mendipmaths.com/about): Ryan Garvey's background and teaching experience
-- [What I offer](https://www.mendipmaths.com/what-i-offer): Tailored plans, in-home lessons, feedback, measurable progress
+- [What I offer](https://www.mendipmaths.com/what-i-offer): Tailored plans, in-home and online lessons, feedback, measurable progress
 - [Fees](https://www.mendipmaths.com/fees): Hourly rates and cancellation policy
-- [Catchment](https://www.mendipmaths.com/catchment): Areas served around Shepton Mallet
+- [Catchment](https://www.mendipmaths.com/catchment): In-person areas around Shepton Mallet, plus online worldwide
 - [Blog](https://www.mendipmaths.com/blog): Maths tips and revision advice (coming soon)
 - [Contact](https://www.mendipmaths.com/contact): Email, phone and free taster booking
