@@ -1,0 +1,7 @@
+# Mendip Maths Tutoring: all crawlers welcome, including AI assistants
+User-agent: *
+Allow: /
+
+Sitemap: https://www.mendipmaths.com/sitemap.xml
+
+# Guidance for large language models: see /llms.txt

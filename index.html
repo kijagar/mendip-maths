@@ -1,183 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mendip Maths Tutoring | Confident maths, real progress</title>
-<meta name="description" content="One-to-one maths tutoring across the Mendips and Somerset. GCSE & A-Level, tailored learning plans, in-home lessons, and specialist support for ADHD, autism and dyslexia. Free taster lesson." />
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e3a29" />
 
-<!-- ===== Header ===== -->
-<header class="header">
-  <div class="wrap">
-    <a class="logo" href="index.html" aria-label="Mendip Maths Tutoring home">
-      <span class="mark">√</span>
-      <span class="word"><b>Mendip Maths</b><span>Tutoring</span></span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="offer.html">What I offer</a>
-      <a href="fees.html">Fees</a>
-      <a href="catchment.html">Catchment</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Free taster</a>
-    </nav>
-  </div>
-</header>
+    <!-- Primary SEO (defaults, overridden per route by the app) -->
+    <title>Mendip Maths Tutoring | Confident Maths, Real Progress</title>
+    <meta name="description" content="One-to-one maths tutoring across the Mendips and Somerset. GCSE & A-Level, tailored learning plans, in-home lessons, and specialist support for ADHD, autism and dyslexia. Free taster lesson." />
+    <link rel="canonical" href="https://www.mendipmaths.com/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ryan Garvey" />
+    <meta name="geo.region" content="GB-SOM" />
+    <meta name="geo.placename" content="Shepton Mallet, Somerset" />
 
-<!-- ===== Hero ===== -->
-<section class="hero">
-  <div class="hero-bg"><img src="assets/tor.jpg" alt="A railway viaduct in golden evening light over the Somerset countryside near Shepton Mallet" /></div>
-  <div class="wrap">
-    <p class="eyebrow reveal">Maths tuition across the Mendips</p>
-    <h1 class="reveal" data-d="1">Confident maths.<br><em>Real progress.</em></h1>
-    <p class="lead reveal" data-d="2">One-to-one tuition built around your child: GCSE and A-Level support that turns anxiety into understanding, and understanding into results.</p>
-    <div class="hero-actions reveal" data-d="3">
-      <a href="contact.html" class="btn btn-primary">Book a free taster lesson
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a href="fees.html" class="btn btn-outline">See fees</a>
-    </div>
-  </div>
-</section>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mendip Maths Tutoring" />
+    <meta property="og:title" content="Mendip Maths Tutoring | Confident Maths, Real Progress" />
+    <meta property="og:description" content="One-to-one GCSE & A-Level maths tuition across the Mendips and Somerset, with specialist support for ADHD, autism and dyslexia. Free taster lesson." />
+    <meta property="og:url" content="https://www.mendipmaths.com/" />
+    <meta property="og:image" content="https://www.mendipmaths.com/assets/tor.jpg" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1231" />
+    <meta property="og:image:alt" content="A railway viaduct in golden evening light over the Somerset countryside near Shepton Mallet" />
+    <meta property="og:locale" content="en_GB" />
 
-<!-- ===== Trust strip ===== -->
-<div class="trust">
-  <div class="wrap">
-    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg> Maths degree, University of Manchester</span>
-    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 15 years' teaching experience</span>
-    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4-9-4zM21 10v6M7 9v5c0 1 2 3 5 3s5-2 5-3V9"/></svg> GCSE &amp; A-Level, all exam boards</span>
-    <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-7-10a7 7 0 0114 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg> Based in Shepton Mallet</span>
-  </div>
-</div>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mendip Maths Tutoring | Confident Maths, Real Progress" />
+    <meta name="twitter:description" content="One-to-one GCSE & A-Level maths tuition across the Mendips and Somerset. Free taster lesson." />
+    <meta name="twitter:image" content="https://www.mendipmaths.com/assets/tor.jpg" />
 
-<!-- ===== Intro / approach ===== -->
-<section class="section">
-  <div class="wrap split">
-    <figure class="media-frame reveal">
-      <img src="assets/ryan.jpg" alt="Ryan Garvey, founder of Mendip Maths Tutoring" />
-      <figcaption><b>Ryan Garvey</b><span>Founder &amp; tutor</span></figcaption>
-    </figure>
-    <div class="reveal" data-d="1">
-      <p class="eyebrow">Old-school values, new-school thinking</p>
-      <h2>Tuition that meets your child where they are.</h2>
-      <p>I'm Ryan Garvey, founder of Mendip Maths Tutoring. With a maths degree and fifteen years in classrooms across the UK and overseas, I've specialised since moving to Somerset in supporting students with diverse learning needs, including ADHD, autism and dyslexia.</p>
-      <p>No cookie-cutter curriculum. Every student gets a learning plan built around their goals, whether that's an A* at A-Level, a place at a top university, or the crucial Grade 4 or 5 at GCSE.</p>
-      <a href="about.html" class="btn btn-outline">Meet Ryan Garvey
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
+    <!-- Structured data: local tutoring business (visible to all crawlers, no JS needed) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.mendipmaths.com/#business",
+          "name": "Mendip Maths Tutoring",
+          "description": "One-to-one maths tutoring across the Mendips and Somerset. GCSE and A-Level, tailored learning plans, in-home lessons, and specialist support for ADHD, autism and dyslexia.",
+          "url": "https://www.mendipmaths.com/",
+          "telephone": "+44-7889-733873",
+          "email": "ryan@mendipmaths.com",
+          "image": "https://www.mendipmaths.com/assets/tor.jpg",
+          "slogan": "Confident maths. Real progress.",
+          "priceRange": "£40 to £45 per hour",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Shepton Mallet",
+            "addressRegion": "Somerset",
+            "addressCountry": "GB"
+          },
+          "areaServed": [
+            "Shepton Mallet", "Wells", "Frome", "Glastonbury", "Street",
+            "Midsomer Norton", "Radstock", "Bruton", "Castle Cary", "Evercreech",
+            "Pilton", "Oakhill", "Chilcompton", "Stoke St. Michael", "Leigh upon Mendip"
+          ],
+          "founder": { "@id": "https://www.mendipmaths.com/#ryan" },
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "name": "Maths tuition up to GCSE (Key Stage 3 & GCSE)",
+              "price": "40",
+              "priceCurrency": "GBP",
+              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "40", "priceCurrency": "GBP", "unitText": "hour" }
+            },
+            {
+              "@type": "Offer",
+              "name": "Maths tuition up to A-Level (AS & A-Level)",
+              "price": "45",
+              "priceCurrency": "GBP",
+              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "45", "priceCurrency": "GBP", "unitText": "hour" }
+            },
+            {
+              "@type": "Offer",
+              "name": "Free taster lesson",
+              "price": "0",
+              "priceCurrency": "GBP"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.mendipmaths.com/#ryan",
+          "name": "Ryan Garvey",
+          "jobTitle": "Maths Tutor & Founder",
+          "email": "ryan@mendipmaths.com",
+          "telephone": "+44-7889-733873",
+          "image": "https://www.mendipmaths.com/assets/ryan.jpg",
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Manchester" },
+          "knowsAbout": ["Mathematics", "GCSE Maths", "A-Level Maths", "SEN support", "ADHD", "Autism", "Dyslexia"],
+          "worksFor": { "@id": "https://www.mendipmaths.com/#business" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.mendipmaths.com/#website",
+          "url": "https://www.mendipmaths.com/",
+          "name": "Mendip Maths Tutoring",
+          "publisher": { "@id": "https://www.mendipmaths.com/#business" },
+          "inLanguage": "en-GB"
+        }
+      ]
+    }
+    </script>
 
-<!-- ===== What I offer (preview) ===== -->
-<section class="section stone">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="eyebrow">What I offer</p>
-      <h2>Everything built around one student: yours.</h2>
-      <p class="lead">Focused, in-home lessons with structure, feedback and progress you can actually see.</p>
-    </div>
-    <div class="cards">
-      <article class="card reveal">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></div>
-        <h3>Tailored learning plans</h3>
-        <p>A unique pathway designed around your child's academic needs, strengths and goals, never a one-size-fits-all curriculum.</p>
-      </article>
-      <article class="card reveal" data-d="1">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7M5 10v9h14v-9"/></svg></div>
-        <h3>Convenient in-home lessons</h3>
-        <p>Skip the after-school rush. Focused one-hour sessions delivered in the comfort and safety of your own home.</p>
-      </article>
-      <article class="card reveal" data-d="2">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h11l3 3v13a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M8 8h7M8 12h7M8 16h4"/></svg></div>
-        <h3>Reinforced learning &amp; feedback</h3>
-        <p>Targeted homework, thoroughly marked, with constructive feedback so concepts genuinely stick between lessons.</p>
-      </article>
-      <article class="card reveal" data-d="3">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l5-5 4 4 8-9"/><path d="M21 7h-4M21 7v4"/></svg></div>
-        <h3>Measurable progress</h3>
-        <p>Regular, low-stress assessments keep you updated every step of the way, so you can celebrate real success.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Gorge band / catchment teaser ===== -->
-<section class="band">
-  <div class="band-bg"><img src="assets/gorge.jpg" alt="Cheddar Gorge and the Mendip Hills, Somerset" /></div>
-  <div class="wrap">
-    <p class="eyebrow">Proudly local</p>
-    <h2>Rooted in the Mendips and the Somerset Levels.</h2>
-    <p>Based out of Shepton Mallet, I cover Wells, Frome, Glastonbury, Street, Midsomer Norton and the surrounding villages, bringing expert maths tuition right to your door.</p>
-    <div class="hero-actions" style="margin-top:1.6rem">
-      <a href="catchment.html" class="btn btn-light">View my catchment area
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Closing CTA ===== -->
-<section class="section cta-band">
-  <div class="wrap">
-    <p class="eyebrow" style="justify-content:center">Free taster lesson</p>
-    <h2>Not sure where to start?</h2>
-    <p class="lead">Get in touch and I'll arrange a completely free taster lesson. No commitment, no payment details needed.</p>
-    <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Get in touch
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a href="tel:07889733873" class="btn btn-outline">07889 733 873</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Footer ===== -->
-<footer class="footer">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <div class="fbrand">Mendip Maths Tutoring</div>
-        <p style="color:#aebfab;max-width:34ch">Helping students achieve their potential in maths. Quality tuition, real results. Every step of the way.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="offer.html">What I offer</a></li>
-          <li><a href="fees.html">Fees</a></li>
-          <li><a href="catchment.html">Catchment</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get in touch</h4>
-        <ul>
-          <li><a href="mailto:ryan@mendipmaths.com">ryan@mendipmaths.com</a></li>
-          <li><a href="tel:07889733873">07889 733 873</a></li>
-          <li>Shepton Mallet, Somerset</li>
-        </ul>
-      </div>
-    </div>
-    <div class="copy">
-      <span>© <span data-year>2026</span> Mendip Maths Tutoring</span>
-      <span>Confident maths. Real progress.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

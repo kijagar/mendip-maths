@@ -1,51 +1,54 @@
 # Mendip Maths Tutoring website
 
-A fast, static multi-page website for Mendip Maths Tutoring, designed to be hosted on **GitHub Pages**. No build step, no dependencies: just HTML, CSS and a little vanilla JavaScript.
+The Mendip Maths Tutoring website as a **Vite + React 19 + TypeScript** single-page app
+(converted from the static HTML site in `../mendip-maths`).
 
-## Pages
-| File | Page |
-|------|------|
-| `index.html` | Home (full-bleed Glastonbury Tor hero) |
-| `about.html` | About: Ryan's story |
-| `offer.html` | What we offer |
-| `fees.html` | Fees & cancellation policy |
-| `catchment.html` | Catchment area |
-| `contact.html` | Contact & free taster |
-
-## Design
-- **Type:** Fraunces (display serif) + Inter (body) via Google Fonts
-- **Palette:** deep forest green `#1e3a29` + warm stone neutrals on white, with a clay accent
-- **Imagery:** a local railway viaduct (`assets/tor.jpg`) and Cheddar Gorge (`assets/gorge.jpg`)
-- Subtle scroll-reveal + spring motion, fully responsive, respects `prefers-reduced-motion`
-
-## Add Ryan's photo
-The About page looks for `assets/ryan.jpg`. Drop a portrait there (roughly 4:5 / portrait orientation works best). Until you do, a tidy placeholder is shown automatically.
-
-## Deploy to GitHub Pages
-1. Create a new repository on GitHub (e.g. `mendip-maths`).
-2. Push this folder (see git commands below).
-3. In the repo: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`, then **Save**.
-4. Your site goes live at `https://<your-username>.github.io/<repo-name>/` within a minute or two.
+## Commands
 
 ```bash
-git remote add origin https://github.com/<your-username>/<repo-name>.git
-git branch -M main
-git push -u origin main
+npm install     # once
+npm run dev     # local dev server
+npm run build   # typecheck + production build into dist/ (also creates dist/404.html for GitHub Pages)
+npm run preview # serve the production build locally
 ```
 
-## Adding a blog post
-`blog.html` currently shows a "coming soon" state. To publish a real post:
-1. Copy an existing page (e.g. `fees.html`) to `posts/your-post-title.html` and write the article inside the `<section>`.
-2. On `blog.html`, replace one of the "Coming soon" ghost cards with a real link, e.g.
-   ```html
-   <a class="card reveal" href="posts/your-post-title.html">
-     <h3>Your post title</h3>
-     <p>A one-line summary of the article.</p>
-   </a>
-   ```
-3. Once a few posts exist, remove the `.blog-empty` "coming soon" panel.
+## Structure
 
-## Contact details (edit in each HTML file's header/footer + contact.html)
-- Email: ryan@mendipmaths.com
-- Phone: 07889 733 873
-- Based: Shepton Mallet, Somerset
+| Path | Purpose |
+|------|---------|
+| `src/site.ts` | Single source of truth: business details, nav items, catchment list |
+| `src/components/Seo.tsx` | Per-route title/description/canonical/Open Graph/JSON-LD |
+| `src/components/Layout.tsx` | Skip link, header, footer, scroll-to-top on navigation |
+| `src/components/Reveal.tsx` | Scroll-reveal animation (respects `prefers-reduced-motion`) |
+| `src/pages/` | One component per page + `NotFound` |
+| `index.html` | Static default metadata + site-wide JSON-LD (what non-JS crawlers see) |
+| `public/robots.txt`, `public/sitemap.xml` | Google crawl metadata |
+| `public/llms.txt` | Business summary for AI assistants/LLM crawlers |
+
+## SEO & metadata
+
+- **Google**: full default metadata + schema.org JSON-LD (`LocalBusiness`, `Person`,
+  `WebSite`) is baked into `index.html`, so it's visible without JavaScript. The `Seo`
+  component then keeps title, description, canonical and Open Graph tags in sync per route.
+- **LLMs**: most AI crawlers don't run JavaScript, so the static `index.html` metadata,
+  JSON-LD and `public/llms.txt` are what they read.
+- The canonical domain is `https://www.mendipmaths.com`. If that changes, update it in
+  `src/site.ts`, `index.html`, `public/sitemap.xml`, `public/robots.txt` and `public/llms.txt`.
+
+## Deploying
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the app and
+publishes `dist/` to GitHub Pages. In the repo settings, **Settings > Pages > Source**
+must be set to **GitHub Actions** (not "Deploy from a branch").
+
+Details:
+
+- `vite.config.ts` sets `base: "/mendip-maths/"` for the project-site URL
+  (`https://kijagar.github.io/mendip-maths/`). If the site moves to a custom domain,
+  change it to `"/"`.
+- The build copies `index.html` to `404.html` so deep links (e.g. `/fees`) resolve on Pages.
+- Any other static host also works: serve `dist/` with a catch-all rewrite to `/index.html`.
+
+For the strongest SEO, consider prerendering each route to static HTML at build time
+(e.g. `vite-plugin-prerender` or migrating to a framework with SSG). Google renders
+JS fine, but prerendered HTML helps non-JS crawlers see per-page content.
