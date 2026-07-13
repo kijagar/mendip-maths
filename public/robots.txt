@@ -2,6 +2,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mendip-maths.com/sitemap.xml
+Sitemap: https://mendip-maths.com/sitemap.xml
 
 # Guidance for large language models: see /llms.txt

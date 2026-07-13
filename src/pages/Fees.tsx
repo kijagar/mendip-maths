@@ -7,7 +7,7 @@ const FEES_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "One-to-one maths tuition",
-  provider: { "@id": "https://www.mendip-maths.com/#business" },
+  provider: { "@id": "https://mendip-maths.com/#business" },
   areaServed: "Somerset, UK",
   offers: [
     { "@type": "Offer", name: "Up to GCSE (Key Stage 3 & GCSE maths)", price: "40", priceCurrency: "GBP" },

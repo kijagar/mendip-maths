@@ -3,7 +3,7 @@
 
 export const SITE = {
   name: "Mendip Maths Tutoring",
-  url: "https://www.mendip-maths.com",
+  url: "https://mendip-maths.com",
   tagline: "Confident maths. Real progress.",
   email: "ryan@mendipmaths.com",
   phoneDisplay: "07889 733 873",
