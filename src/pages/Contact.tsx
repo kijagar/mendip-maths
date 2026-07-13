@@ -7,8 +7,8 @@ const CONTACT_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   name: "Contact Mendip Maths Tutoring",
-  url: "https://www.mendipmaths.com/contact",
-  about: { "@id": "https://www.mendipmaths.com/#business" },
+  url: "https://www.mendip-maths.com/contact",
+  about: { "@id": "https://www.mendip-maths.com/#business" },
 };
 
 export default function Contact() {

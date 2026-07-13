@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// Served from https://kijagar.github.io/mendip-maths/ (GitHub Pages project site).
-// If the site moves to a custom domain, change base to "/".
+// Served at the custom domain https://www.mendip-maths.com/ (site root).
+// If it ever moves back to the github.io project URL, set base to "/mendip-maths/".
 export default defineConfig({
-  base: "/mendip-maths/",
+  base: "/",
   plugins: [react()],
 });

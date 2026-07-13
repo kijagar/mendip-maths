@@ -32,7 +32,7 @@ npm run preview # serve the production build locally
   component then keeps title, description, canonical and Open Graph tags in sync per route.
 - **LLMs**: most AI crawlers don't run JavaScript, so the static `index.html` metadata,
   JSON-LD and `public/llms.txt` are what they read.
-- The canonical domain is `https://www.mendipmaths.com`. If that changes, update it in
+- The canonical domain is `https://www.mendip-maths.com`. If that changes, update it in
   `src/site.ts`, `index.html`, `public/sitemap.xml`, `public/robots.txt` and `public/llms.txt`.
 
 ## Deploying
@@ -43,9 +43,10 @@ must be set to **GitHub Actions** (not "Deploy from a branch").
 
 Details:
 
-- `vite.config.ts` sets `base: "/mendip-maths/"` for the project-site URL
-  (`https://kijagar.github.io/mendip-maths/`). If the site moves to a custom domain,
-  change it to `"/"`.
+- `vite.config.ts` sets `base: "/"` for the custom domain
+  (`https://www.mendip-maths.com/`, configured via `public/CNAME` and the repo's
+  Pages settings). If the site ever moves back to the github.io project URL,
+  change it to `"/mendip-maths/"`.
 - The build copies `index.html` to `404.html` so deep links (e.g. `/fees`) resolve on Pages.
 - Any other static host also works: serve `dist/` with a catch-all rewrite to `/index.html`.
 
