@@ -16,7 +16,7 @@ export default function Contact() {
     <>
       <Seo
         title="Contact | Mendip Maths Tutoring"
-        description="Get in touch with Mendip Maths Tutoring. Email ryan@mendipmaths.com or call 07889 733 873 to arrange a free taster lesson."
+        description="Get in touch with Mendip Maths Tutoring. Email learning@mendipmaths.com or call 07889 733 873 to arrange a free taster lesson."
         path="/contact"
         jsonLd={CONTACT_JSON_LD}
       />

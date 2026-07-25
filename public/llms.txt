@@ -1,9 +1,9 @@
 # Mendip Maths Tutoring
 
 > One-to-one maths tutoring across the Mendips and Somerset, UK, plus live online
-> lessons worldwide. GCSE and A-Level support with tailored learning plans, in-home
-> lessons, and specialist experience supporting students with ADHD, autism and
-> dyslexia. Free taster lesson available.
+> lessons worldwide. GCSE, IGCSE, A-Level and IB support with tailored learning
+> plans, in-home lessons, and specialist experience supporting students with ADHD,
+> autism and dyslexia. Free taster lesson available.
 
 ## About
 
@@ -17,8 +17,8 @@
 
 ## Fees
 
-- Up to GCSE (Key Stage 3 & GCSE maths): £40 per hour
-- Up to A-Level (AS & A-Level maths): £45 per hour
+- Up to GCSE (Key Stage 3, GCSE & IGCSE maths): £40 per hour
+- Up to A-Level (AS, A-Level & IB maths): £45 per hour
 - Free taster lesson with no commitment and no payment details needed
 - Term-time cancellations with under 48 hours' notice are charged in full;
   holiday sessions need two weeks' notice. Travel outside the catchment may affect fees.
@@ -33,7 +33,7 @@ are considered (travel costs may apply). Online lessons are available worldwide.
 
 ## Contact
 
-- Email: ryan@mendipmaths.com
+- Email: learning@mendipmaths.com
 - Phone: 07889 733 873
 - Location: Shepton Mallet, Somerset, UK
 

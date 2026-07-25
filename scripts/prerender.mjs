@@ -17,7 +17,7 @@ const ROUTES = [
     path: "/",
     title: "Mendip Maths Tutoring | Confident Maths, Real Progress",
     description:
-      "One-to-one maths tutoring across the Mendips and Somerset, plus online lessons worldwide. GCSE & A-Level, tailored learning plans, and specialist support for ADHD, autism and dyslexia. Free taster lesson.",
+      "One-to-one maths tutoring across the Mendips and Somerset, plus online lessons worldwide. GCSE, IGCSE, A-Level and IB, tailored learning plans, and specialist support for ADHD, autism and dyslexia. Free taster lesson.",
   },
   {
     path: "/about",
@@ -35,7 +35,7 @@ const ROUTES = [
     path: "/fees",
     title: "Fees | Mendip Maths Tutoring",
     description:
-      "Transparent maths tutoring fees: £40 per hour up to GCSE, £45 per hour up to A-Level, plus my cancellation policy.",
+      "Transparent maths tutoring fees: £40 per hour up to GCSE and IGCSE, £45 per hour up to A-Level and IB, plus my cancellation policy.",
   },
   {
     path: "/catchment",
@@ -53,7 +53,7 @@ const ROUTES = [
     path: "/contact",
     title: "Contact | Mendip Maths Tutoring",
     description:
-      "Get in touch with Mendip Maths Tutoring. Email ryan@mendipmaths.com or call 07889 733 873 to arrange a free taster lesson.",
+      "Get in touch with Mendip Maths Tutoring. Email learning@mendipmaths.com or call 07889 733 873 to arrange a free taster lesson.",
   },
 ];
 

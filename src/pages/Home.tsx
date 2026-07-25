@@ -32,7 +32,7 @@ export default function Home() {
     <>
       <Seo
         title="Mendip Maths Tutoring | Confident Maths, Real Progress"
-        description="One-to-one maths tutoring across the Mendips and Somerset, plus online lessons worldwide. GCSE & A-Level, tailored learning plans, and specialist support for ADHD, autism and dyslexia. Free taster lesson."
+        description="One-to-one maths tutoring across the Mendips and Somerset, plus online lessons worldwide. GCSE, IGCSE, A-Level and IB, tailored learning plans, and specialist support for ADHD, autism and dyslexia. Free taster lesson."
         path="/"
       />
 
@@ -51,8 +51,8 @@ export default function Home() {
           <Reveal as="p" className="eyebrow">Maths tuition across the Mendips</Reveal>
           <Reveal as="h1" delay={1}>Confident maths.<br /><em>Real progress.</em></Reveal>
           <Reveal as="p" delay={2} className="lead">
-            One-to-one tuition built around your child: GCSE and A-Level support that turns
-            anxiety into understanding, and understanding into results.
+            One-to-one tuition built around your child: GCSE, A-Level and IB support that
+            turns anxiety into understanding, and understanding into results.
           </Reveal>
           <Reveal delay={3} className="hero-actions">
             <Link to="/contact" className="btn btn-primary">
@@ -68,7 +68,7 @@ export default function Home() {
         <div className="wrap">
           <span className="item"><Plus /> Maths degree, University of Manchester</span>
           <span className="item"><Clock /> 15 years&rsquo; teaching experience</span>
-          <span className="item"><GradCap /> GCSE &amp; A-Level, all exam boards</span>
+          <span className="item"><GradCap /> GCSE, IGCSE, A-Level &amp; IB</span>
           <span className="item"><Pin /> Based in Shepton Mallet</span>
           <span className="item"><Globe /> Online lessons worldwide</span>
         </div>

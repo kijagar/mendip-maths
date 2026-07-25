@@ -10,8 +10,8 @@ const FEES_JSON_LD = {
   provider: { "@id": "https://mendip-maths.com/#business" },
   areaServed: "Somerset, UK",
   offers: [
-    { "@type": "Offer", name: "Up to GCSE (Key Stage 3 & GCSE maths)", price: "40", priceCurrency: "GBP" },
-    { "@type": "Offer", name: "Up to A-Level (AS & A-Level maths)", price: "45", priceCurrency: "GBP" },
+    { "@type": "Offer", name: "Up to GCSE (Key Stage 3, GCSE & IGCSE maths)", price: "40", priceCurrency: "GBP" },
+    { "@type": "Offer", name: "Up to A-Level (AS, A-Level & IB maths)", price: "45", priceCurrency: "GBP" },
   ],
 };
 
@@ -20,7 +20,7 @@ export default function Fees() {
     <>
       <Seo
         title="Fees | Mendip Maths Tutoring"
-        description="Transparent maths tutoring fees: £40 per hour up to GCSE, £45 per hour up to A-Level, plus my cancellation policy."
+        description="Transparent maths tutoring fees: £40 per hour up to GCSE and IGCSE, £45 per hour up to A-Level and IB, plus my cancellation policy."
         path="/fees"
         jsonLd={FEES_JSON_LD}
       />
@@ -39,12 +39,12 @@ export default function Fees() {
           <div className="fees-list">
             <Reveal className="fee-row">
               <div className="ic"><School /></div>
-              <div className="label">Up to GCSE <small>Key Stage 3 &amp; GCSE maths</small></div>
+              <div className="label">Up to GCSE <small>Key Stage 3, GCSE &amp; IGCSE maths</small></div>
               <div className="price">£40<small> / hour</small></div>
             </Reveal>
             <Reveal className="fee-row" delay={1}>
               <div className="ic"><BookOpen /></div>
-              <div className="label">Up to A-Level <small>AS &amp; A-Level maths</small></div>
+              <div className="label">Up to A-Level <small>AS, A-Level &amp; IB maths</small></div>
               <div className="price">£45<small> / hour</small></div>
             </Reveal>
           </div>

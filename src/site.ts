@@ -5,7 +5,7 @@ export const SITE = {
   name: "Mendip Maths Tutoring",
   url: "https://mendip-maths.com",
   tagline: "Confident maths. Real progress.",
-  email: "ryan@mendipmaths.com",
+  email: "learning@mendipmaths.com",
   phoneDisplay: "07889 733 873",
   phoneHref: "tel:07889733873",
   location: "Shepton Mallet, Somerset",
