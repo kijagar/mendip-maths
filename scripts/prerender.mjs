@@ -91,10 +91,12 @@ for (const route of ROUTES) {
     )
     .replace('<div id="root"></div>', `<div id="root">${body}</div>`);
 
+  // Flat .html files: GitHub Pages serves dist/fees.html at /fees directly,
+  // so route URLs return 200 with no trailing-slash redirect.
   const outFile =
     route.path === "/"
       ? resolve(root, "dist/index.html")
-      : resolve(root, `dist${route.path}/index.html`);
+      : resolve(root, `dist${route.path}.html`);
   mkdirSync(dirname(outFile), { recursive: true });
   writeFileSync(outFile, page);
   console.log(`prerendered ${route.path} (${(page.length / 1024).toFixed(1)} kB)`);
