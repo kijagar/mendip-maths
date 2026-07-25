@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const BASE: [number, number] = [51.193, -2.546]; // Shepton Mallet
@@ -29,29 +28,39 @@ export default function CatchmentMap() {
     const el = ref.current;
     if (!el) return;
 
-    const map = L.map(el, { scrollWheelZoom: false });
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 17,
-    }).addTo(map);
+    let map: import("leaflet").Map | undefined;
+    let cancelled = false;
 
-    const home = L.circleMarker(BASE, {
-      radius: 9, color: "#ffffff", weight: 3, fillColor: "#1e3a29", fillOpacity: 1,
-    }).bindTooltip("Shepton Mallet, my base", {
-      permanent: true, direction: "top", offset: [0, -10],
+    // Dynamic import keeps Leaflet (which touches `window` on load)
+    // out of the build-time prerender pass.
+    void import("leaflet").then(({ default: L }) => {
+      if (cancelled || !el) return;
+
+      map = L.map(el, { scrollWheelZoom: false });
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 17,
+      }).addTo(map);
+
+      const home = L.circleMarker(BASE, {
+        radius: 9, color: "#ffffff", weight: 3, fillColor: "#1e3a29", fillOpacity: 1,
+      }).bindTooltip("Shepton Mallet, my base", {
+        permanent: true, direction: "top", offset: [0, -10],
+      });
+
+      const markers = AREAS.map((area) =>
+        L.circleMarker(area.pos, {
+          radius: 7, color: "#ffffff", weight: 2, fillColor: "#4a7a59", fillOpacity: 0.95,
+        }).bindTooltip(area.name, { direction: "top", offset: [0, -8] })
+      );
+
+      const group = L.featureGroup([home, ...markers]).addTo(map);
+      map.fitBounds(group.getBounds().pad(0.12));
     });
 
-    const markers = AREAS.map((area) =>
-      L.circleMarker(area.pos, {
-        radius: 7, color: "#ffffff", weight: 2, fillColor: "#4a7a59", fillOpacity: 0.95,
-      }).bindTooltip(area.name, { direction: "top", offset: [0, -8] })
-    );
-
-    const group = L.featureGroup([home, ...markers]).addTo(map);
-    map.fitBounds(group.getBounds().pad(0.12));
-
     return () => {
-      map.remove();
+      cancelled = true;
+      map?.remove();
     };
   }, []);
 
