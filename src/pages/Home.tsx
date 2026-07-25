@@ -41,8 +41,8 @@ export default function Home() {
         <div className="hero-bg">
           <img
             src={asset("assets/tor.jpg")}
-            width={2400}
-            height={1231}
+            width={1600}
+            height={820}
             fetchPriority="high"
             alt="A railway viaduct in golden evening light over the Somerset countryside near Shepton Mallet"
           />
@@ -133,8 +133,8 @@ export default function Home() {
         <div className="band-bg">
           <img
             src={asset("assets/gorge.jpg")}
-            width={2400}
-            height={979}
+            width={1600}
+            height={652}
             loading="lazy"
             alt="Cheddar Gorge and the Mendip Hills, Somerset"
           />

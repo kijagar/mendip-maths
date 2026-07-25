@@ -69,8 +69,8 @@ export default function Offer() {
         <div className="band-bg">
           <img
             src={asset("assets/gorge.jpg")}
-            width={2400}
-            height={979}
+            width={1600}
+            height={652}
             loading="lazy"
             alt="The Mendip Hills, Somerset"
           />

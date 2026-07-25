@@ -19,8 +19,8 @@ export default function Catchment() {
         <div className="band-bg">
           <img
             src={asset("assets/gorge.jpg")}
-            width={2400}
-            height={979}
+            width={1600}
+            height={652}
             fetchPriority="high"
             alt="Cheddar Gorge and the Mendip Hills, Somerset"
           />

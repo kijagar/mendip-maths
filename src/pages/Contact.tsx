@@ -1,5 +1,6 @@
 import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
+import JsonLd from "../components/JsonLd";
 import { SITE } from "../site";
 import { ArrowRight, Mail, Phone } from "../components/icons";
 
@@ -18,8 +19,8 @@ export default function Contact() {
         title="Contact | Mendip Maths Tutoring"
         description="Get in touch with Mendip Maths Tutoring. Email learning@mendipmaths.com or call 07889 733 873 to arrange a free taster lesson."
         path="/contact"
-        jsonLd={CONTACT_JSON_LD}
       />
+      <JsonLd data={CONTACT_JSON_LD} />
 
       <section className="section">
         <div className="wrap">

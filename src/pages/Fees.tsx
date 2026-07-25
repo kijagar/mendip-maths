@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
+import JsonLd from "../components/JsonLd";
 import { ArrowRight, School, BookOpen, Clock, Calendar, Pin, Globe } from "../components/icons";
 
 const FEES_JSON_LD = {
@@ -15,6 +16,43 @@ const FEES_JSON_LD = {
   ],
 };
 
+const FAQS = [
+  {
+    q: "Where do you offer in-person lessons?",
+    a: "I am based in Shepton Mallet and travel to homes across the Mendips and Somerset, including Wells, Frome, Glastonbury, Street, Midsomer Norton and the surrounding villages.",
+  },
+  {
+    q: "Do you teach online?",
+    a: "Yes. I teach live one-to-one online lessons worldwide, with the same tailored plans, marked homework and progress tracking as in-person lessons.",
+  },
+  {
+    q: "How much do lessons cost?",
+    a: "Lessons are £40 per hour up to GCSE and IGCSE (including Key Stage 3), and £45 per hour up to A-Level and IB.",
+  },
+  {
+    q: "Which qualifications do you cover?",
+    a: "Key Stage 3, GCSE, IGCSE, AS and A-Level, and the International Baccalaureate (IB), across all major UK exam boards.",
+  },
+  {
+    q: "Can you support students with ADHD, autism or dyslexia?",
+    a: "Yes. Supporting students with diverse learning needs is my specialism, developed through years of alternative-provision teaching.",
+  },
+  {
+    q: "Is the taster lesson really free?",
+    a: "Yes. The first taster lesson is completely free, with no commitment and no payment details needed.",
+  },
+];
+
+const FAQ_JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+
 export default function Fees() {
   return (
     <>
@@ -22,8 +60,9 @@ export default function Fees() {
         title="Fees | Mendip Maths Tutoring"
         description="Transparent maths tutoring fees: £40 per hour up to GCSE and IGCSE, £45 per hour up to A-Level and IB, plus my cancellation policy."
         path="/fees"
-        jsonLd={FEES_JSON_LD}
       />
+      <JsonLd data={FEES_JSON_LD} />
+      <JsonLd data={FAQ_JSON_LD} />
 
       <section className="section">
         <div className="wrap">
@@ -74,6 +113,17 @@ export default function Fees() {
               </p>
             </Reveal>
           </div>
+
+          <Reveal className="faq stack-top">
+            <p className="eyebrow">Common questions</p>
+            <h2 className="faq-title">Frequently asked questions.</h2>
+            {FAQS.map((faq) => (
+              <details className="faq-item" key={faq.q}>
+                <summary>{faq.q}</summary>
+                <p>{faq.a}</p>
+              </details>
+            ))}
+          </Reveal>
 
           <div className="hero-actions stack-top">
             <Link to="/contact" className="btn btn-primary">
