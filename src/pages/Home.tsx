@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Mendip Maths Tutoring | Maths Tutor in Somerset & Online (GCSE, A-Level, IB)"
+        title="Maths Tutoring UK & Online | GCSE, A-Level, IB | Mendip Maths"
         description="One-to-one maths tutoring across the Mendips and Somerset, plus online lessons worldwide. GCSE, IGCSE, A-Level and IB, tailored learning plans, and specialist support for ADHD, autism and dyslexia. Free taster lesson."
         path="/"
       />
