@@ -39,3 +39,20 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # The repo's Pages source is still "deploy from a branch", so every push
+  # also triggers a legacy build of the raw source that races this workflow.
+  # Until the Pages source is switched to "GitHub Actions" in the repo
+  # settings, deploy a second time after the legacy build has finished so
+  # the built site is always the newest (winning) deployment.
+  redeploy-after-legacy:
+    needs: deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment2.outputs.page_url }}
+    steps:
+      - name: Wait out the legacy branch deploy
+        run: sleep 150
+      - id: deployment2
+        uses: actions/deploy-pages@v4
